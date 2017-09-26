@@ -1,0 +1,12 @@
+2017-09-20 12:31:20 HitAPS_Post - Post Data Incoming
+2017-09-20 12:31:26 HitAPS_Response - Return Data Outgoing
+2017-09-20 12:34:48 HitAPS_Post - Post Data Incoming
+2017-09-20 12:34:49 HitAPS_Response - Return Data Outgoing
+2017-09-20 12:35:03 HitAPS_Post - Post Data Incoming
+2017-09-20 12:35:04 HitAPS_Response - Return Data Outgoing
+2017-09-20 12:35:13 HitAPS_Post - Post Data Incoming
+2017-09-20 12:35:13 HitAPS_Response - Return Data Outgoing
+2017-09-20 12:41:38 HitAPS_Post - Post Data Incoming
+2017-09-20 12:41:38 HitAPS_Response - Return Data Outgoing
+2017-09-20 13:03:25 HitAPS_Post - Post Data Incoming
+2017-09-20 13:03:25 HitAPS_Response - Return Data Outgoing

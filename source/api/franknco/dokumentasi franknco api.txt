@@ -1,0 +1,306 @@
+URL API: localhost/franknco_api_RESTFULL/api/hitapi/hitaps 
+POST TYPE : JSON Post
+semua post "code" tidak perlu diencrypt 3des
+semua post "msg" (kecuali tanggal tidak perlu di 3des) di encrypt menggunakan 3des(key:12345678uaop) (iv:00000000)
+
+
+misalnya untuk login post msg yang diperlukan adalah user#passwd, maka user dan passwd di ecnrypt 3des dahulu
+sehingga post nya menjadi, 
+<H2>LOGIN</H2>
+  <form action="http://localhost/franknco_api_RESTFULL/api/hitapi/hitaps" method="post" name="form_testing">
+    <label>CODE</label>
+    <input type="text" name="code" value="0100">
+    <br>
+    <label>MESSAGE</label>
+    <input type="text" name="msg" value="4D7871704E3658616737787059374C764945315A4B673D3D#74782B7A4E6746556F79756D313557666E2F32387A683278396E48705341734B694F325330503779375368355972614363385738766F357551386A2B6D69706D706C6F72625649433032536265454B6762756A485A773D3D">
+	  <br>
+    <input type="submit" value="SUBMIT">
+  </form>
+  
+  
+-------------------------------------------------------------------------------------------------------------
+LOGIN	//function untuk melakukan login
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"0100",
+"msg":"$user#				//no hp user 
+       $passwd"				//pass user(SHA256 lalu di 3des)
+
+RESPONSE DATA:
+"code":"0110", 
+"msg":"$token"				//User dan Password cocok, API akan mengembalikan token 
+
+"code": "0120", 
+"msg":"User and Password not Match"
+
+"code":"0130", 
+"msg":"Please Try Again in 10 minutes"
+
+-------------------------------------------------------------------------------------------------------------
+SIGN UP 	//function untuk melakukan pendaftaran user dan kartu pertamanya
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"0200",
+"msg":"$card_number#   		//no kartu
+	   $fullname#			//nama user
+	   $dob#				//tgl lahir(tidak perlu di 3des)
+	   $address#			//alamat
+	   $email#				//email
+	   $hp#					//no hp user
+	   $passwd"				//pass user(SHA256 lalu di 3des)
+	  
+	   
+RESPONSE DATA:
+"code":"0210", 
+"msg":"Sign Up Success"
+
+"code":"0220", 
+"msg":"Error When Inserting to Database"	
+
+"code":"0230", 
+"msg":"User Already Exist"					//User telah terdaftar
+
+"code":"0240", 
+"msg":"Card not Registered to Database"		//Data kartu belum ada di database, data kartu masuk ke database saat pembuatan PO pada backend
+
+-------------------------------------------------------------------------------------------------------------
+FORGOT PASSWORD		//function untuk melakukan lupa password
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"0300",	
+"msg":"$user"					//no hp user
+
+RESPONSE DATA:
+"code": "0310",
+"msg": "$password"				//password user(sementara API mengembalikan pass user, kedepannya akan di develop lagi)
+
+
+"code":"0320", 
+"msg":"User not Exist"
+
+-------------------------------------------------------------------------------------------------------------
+CHANGE PASSWORD		//function untuk melakukan eprubahan password
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"0400",
+"msg":"$user#					//no hp user
+	   $old_pass#				//pass lama user(SHA256 lalu di 3des)
+	   $new_pass",				//pass baru user(SHA256 lalu di 3des)
+"token":"$token"				//token user	   
+	   
+RESPONSE DATA:
+"code":"0410", 
+"msg":"Change Password Success"
+
+"code":"0420", 
+"msg":"User and Password not Match"
+
+"code":"0430", 
+"msg":"User not Exist"	
+
+-------------------------------------------------------------------------------------------------------------
+GET CARD KEY FOR DECRYPT CARD CREDIT		//function untuk mendapatkan card key
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"0500",
+"msg":"$user#    				//no hp user
+       $card_number",			//no kartu
+"token":"$token"				//token user	   
+	   
+RESPONSE DATA:
+"code":"0510", 
+"msg":"$card_key"				//API akan mengembalikan key yg digunakan sebagai key untuk decrypt 3des
+
+"code":"0520", 
+"msg":"Card not Registered to User"
+
+"code":"0530", 
+"msg":"User not Exist"
+
+-------------------------------------------------------------------------------------------------------------
+GET CARD CREDIT		//function untuk mendapatkan saldo kartu
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"0600",
+"msg":"$user#    				//no hp user
+       $card_number",			//no kartu
+"token":"$token"				//token user	   
+	   
+RESPONSE DATA:
+//API akan mengembalikan saldo kartu(saldo kartu harus di decrypt 3des dengan master key, kemudian di decrypt lagi dengan card key)
+{
+  "code": "0610",
+  "msg": {
+    "user": "4D7871704E3658616737787059374C764945315A4B673D3D",
+    "x175": "536456736133446F4D696C7A30493739715048386D482F7271754F44574D3534",
+    "card_key": "4358393444587152366D47354B7738496464387373673D3D"
+  }
+}				
+
+"code":"0620", 
+"msg":"Card not Registered to User"
+
+"code":"0630", 
+"msg":"User not Exist"
+
+-------------------------------------------------------------------------------------------------------------
+GET USER CARD LIST		//function untuk mendapatkan list kartu yang dimiliki user
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"0700",
+"msg":"$user#    				//no hp user
+       $card_number",			//no kartu
+"token":"$token"				//token user		   
+	   
+RESPONSE DATA:
+{
+  "code": "0710",
+  "msg": [
+    {
+      "user": "4D7871704E3658616737787059374C764945315A4B673D3D",
+      "card_id": "347938556E3047563259453D",
+      "card_number": "764665453644414450694D5464776830686C763138413D3D",
+      "x175": "536456736133446F4D696C7A30493739715048386D482F7271754F44574D3534",
+      "card_key": "4358393444587152366D47354B7738496464387373673D3D",
+      "valid_until": "2018-09-08"
+    },
+    {
+      "user": "4D7871704E3658616737787059374C764945315A4B673D3D",
+      "card_id": "645562614D2B74512B51593D",
+      "card_number": "695268397A437874464164517561442F7A6F6E7652413D3D",
+      "x175": "4D336E6D4E6549784844325A68796F5139757974532F394F7059324654644E30",
+      "card_key": "4358393444587152366D47354B7738496464387373673D3D",
+      "valid_until": "2018-09-08"
+    }
+  ]
+}
+
+"code":"0720", 
+"msg":"No Card Found"
+
+"code":"0730", 
+"msg":"User not Exist"
+
+-------------------------------------------------------------------------------------------------------------
+GET CARD TRANSACTION LIST	//function untuk mendapatkan list transaksi yang dimiliki kartu
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"0800",
+"msg":"$user#    				//no hp user
+       $card_number#			//no kartu
+	   $limit",					//jumlah baris data yg transaksi ingin diambil
+"token":"$token"				//token user		   
+	   
+RESPONSE DATA:
+{
+  "code": "0810",
+  "msg": [
+    {
+      "card_number": "764665453644414450694D5464776830686C763138413D3D",
+      "transaction_type": "75797673656A76664E6A6B3D",
+      "x761": "752F7250662F55754142513D",
+      "trans_date": "2017-09-13 00:00:00"
+    },
+    {
+      "card_number": "764665453644414450694D5464776830686C763138413D3D",
+      "transaction_type": "596455354B6D58585439493D",
+      "x761": "752F7250662F55754142513D",
+      "trans_date": "2017-09-07 00:00:00"
+    }
+  ]
+}
+
+"code":"0820", 
+"msg":"No Transaction Found"
+
+"code":"0830", 
+"msg":"User not Exist"
+
+-------------------------------------------------------------------------------------------------------------
+REGISTER CARD	//function untuk menambahkan kartu kepada user
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"0900",
+"msg":"$user#    				//no hp user
+       $card_number",			//no kartu
+"token":"$token"				//token user	
+	   
+	   
+RESPONSE DATA:
+"code":"0910", 
+"msg":"Card Register Success"			
+
+"code":"0920", 
+"msg":"Error When Inseting to Database"
+
+"code":"0930", 
+"msg":"User not Exist"
+
+"code":"0940", 
+"msg":"Card not Registered to Database"		//Data kartu belum ada di database, data kartu masuk ke database saat pembuatan PO pada backend
+
+-------------------------------------------------------------------------------------------------------------
+ENCRYPT 3 DES  //function tambahan
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"1600",
+"msg":"$text"			//text yang ingin di encrypt 3des
+	   
+	   
+RESPONSE DATA:
+"$encrypted"			//hasil encrypt
+
+-------------------------------------------------------------------------------------------------------------
+DECRYPT 3 DES	//function tambahan
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"1700",
+"msg":"$text"			//text yang ingin di decrypt 3des
+	   
+	   
+RESPONSE DATA:
+"$decrypted"			//hasil decrypt
+
+-------------------------------------------------------------------------------------------------------------
+ENCRYPT 3 DES CARD CREDIT	//function tambahan
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"1800",
+"msg":"$text#			//text yang ingin di ecnrypt 3des
+	   $key"			//card key dari respon post code 0500
+	   
+	   
+RESPONSE DATA:
+"$encrypted"			//hasil encrypt
+
+-------------------------------------------------------------------------------------------------------------
+DECRYPT 3 DES CARD CREDIT	//function tambahan
+-------------------------------------------------------------------------------------------------------------
+POST DATA:
+"code":"1900",
+"msg":"$text#"			//text yang ingin di decrypt 3des
+	   $key"			//card key dari respon post code 0500
+	   
+RESPONSE DATA:
+"$decrypted"			//hasil decrypt
+
+-------------------------------------------------------------------------------------------------------------
+RESPONSE ERROR LAIN KETIKA MELAKUKAN HIT
+-------------------------------------------------------------------------------------------------------------
+"code":"0001",
+"msg":"Empty Post Code or Post Msg"
+
+"code":"0002",
+"msg":"Post Code not Match"
+
+"code":"0003",
+"msg":"Post Data Must be JSON"
+
+"code":"0004",
+"msg":"Token is Empty"
+
+"code":"0005",
+"msg":"Token Expired, Generate New Token"
+
+"code":"0006",
+"msg":"User and Token not Match"

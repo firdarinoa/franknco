@@ -1,0 +1,36 @@
+2017-09-06 14:14:31 - 083878211168 - CARD KEY - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 14:14:31 - 083878211168 - CARD KEY - Card Key Success! Code=0510 - Get Card Key Success!
+2017-09-06 14:14:34 - 083878211168 - CARD CREDIT - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 14:14:34 - 083878211168 - CARD CREDIT - Card Credit Success! Code=0610 - Get Card Credit Success!
+2017-09-06 14:14:37 - 083878211168 - CARD LIST - Init Hit Data User:s:12:"083878211168";
+2017-09-06 14:14:37 - 083878211168 - CARD LIST - Card List Failed! Code=0730 - Token Expired, Generate New Token!
+2017-09-06 16:43:15 - 083878211168 - CARD KEY - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 16:43:16 - 083878211168 - CARD KEY - Card Key Failed! Code=0540 - User or Token is Wrong!
+2017-09-06 16:43:20 - 083878211168 - CARD LIST - Init Hit Data User:s:12:"083878211168";
+2017-09-06 16:43:20 - 083878211168 - CARD LIST - Card List Failed! Code=0740 - User or Token is Wrong!
+2017-09-06 16:44:04 - 083878211168 - CARD LIST - Init Hit Data User:s:12:"083878211168";
+2017-09-06 16:44:04 - 083878211168 - CARD LIST - Card List Failed! Code=0730 - Token Expired, Generate New Token!
+2017-09-06 16:44:09 - 083878211168 - CARD CREDIT - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 16:44:09 - 083878211168 - CARD CREDIT - Card Credit Failed! Code=0640 - User or Token is Wrong!
+2017-09-06 16:44:13 - 083878211168 - CARD CREDIT - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 16:44:13 - 083878211168 - CARD CREDIT - Card Credit Failed! Code=0640 - User or Token is Wrong!
+2017-09-06 16:44:15 - 083878211168 - CARD LIST - Init Hit Data User:s:12:"083878211168";
+2017-09-06 16:44:15 - 083878211168 - CARD LIST - Card List Failed! Code=0740 - User or Token is Wrong!
+2017-09-06 16:45:52 - 083878211168 - CARD KEY - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 16:45:52 - 083878211168 - CARD KEY - Card Key Success! Code=0510 - Get Card Key Success!
+2017-09-06 16:45:56 - 083878211168 - CARD KEY - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 16:45:56 - 083878211168 - CARD KEY - Card Key Success! Code=0510 - Get Card Key Success!
+2017-09-06 16:45:59 - 083878211168 - CARD CREDIT - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 16:45:59 - 083878211168 - CARD CREDIT - Card Credit Success! Code=0610 - Get Card Credit Success!
+2017-09-06 16:46:01 - 083878211168 - CARD CREDIT - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 16:46:01 - 083878211168 - CARD CREDIT - Card Credit Success! Code=0610 - Get Card Credit Success!
+2017-09-06 16:46:04 - 083878211168 - CARD LIST - Init Hit Data User:s:12:"083878211168";
+2017-09-06 16:46:04 - 083878211168 - CARD LIST - Card List Success! Code=0710 - Get Card List Success!
+2017-09-06 16:46:06 - 083878211168 - CARD LIST - Init Hit Data User:s:12:"083878211168";
+2017-09-06 16:46:06 - 083878211168 - CARD LIST - Card List Success! Code=0710 - Get Card List Success!
+2017-09-06 16:46:09 - 083878211168 - CARD CREDIT - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 16:46:09 - 083878211168 - CARD CREDIT - Card Credit Success! Code=0610 - Get Card Credit Success!
+2017-09-06 16:46:11 - 083878211168 - CARD CREDIT - Init Hit Data User:s:12:"083878211168";Card Number:s:10:"1234567890";
+2017-09-06 16:46:11 - 083878211168 - CARD CREDIT - Card Credit Success! Code=0610 - Get Card Credit Success!
+2017-09-06 16:46:13 - 083878211168 - CARD LIST - Init Hit Data User:s:12:"083878211168";
+2017-09-06 16:46:13 - 083878211168 - CARD LIST - Card List Success! Code=0710 - Get Card List Success!

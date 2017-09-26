@@ -1,0 +1,16 @@
+2017-09-15 09:52:31 HitAPS_Post - Post Data Incoming
+2017-09-15 09:52:36 HitAPS_Response - Return Data Outgoing
+2017-09-15 10:08:02 HitAPS_Post - Post Data Incoming
+2017-09-15 10:08:03 HitAPS_Response - Return Data Outgoing
+2017-09-15 10:08:07 HitAPS_Post - Post Data Incoming
+2017-09-15 10:08:08 HitAPS_Response - Return Data Outgoing
+2017-09-15 10:08:19 HitAPS_Post - Post Data Incoming
+2017-09-15 10:08:20 HitAPS_Response - Return Data Outgoing
+2017-09-15 10:08:24 HitAPS_Post - Post Data Incoming
+2017-09-15 10:08:25 HitAPS_Response - Return Data Outgoing
+2017-09-15 10:22:11 HitAPS_Post - Post Data Incoming
+2017-09-15 10:22:14 HitAPS_Response - Return Data Outgoing
+2017-09-15 10:44:20 HitAPS_Post - Post Data Incoming
+2017-09-15 10:44:20 HitAPS_Response - Return Data Outgoing
+2017-09-15 12:46:35 HitAPS_Post - Post Data Incoming
+2017-09-15 12:46:37 HitAPS_Response - Return Data Outgoing

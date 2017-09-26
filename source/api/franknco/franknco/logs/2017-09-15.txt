@@ -1,0 +1,10 @@
+2017-09-15 09:52:35 - 083878211169 - SIGN UP - Init Hit Data User:s:12:"083878211169";Password:s:64:"4CC8F4D609B717356701C57A03E737E5AC8FE885DA8C7163D3DE47E01849C635";Card Number:s:10:"0987654321";Fullname:s:5:"felix";DOB:s:10:"1992-10-25";Address:s:11:"season city";Email:s:15:"felix@gmail.com";
+2017-09-15 09:52:35 - 083878211169 - SIGN UP - Sign Up Failed! Code=0230 - User Already Exist!
+2017-09-15 10:08:02 - Zánð×*[%ÿýT†ª< - SIGN UP - Init Hit Data User:s:16:"Zánð×*[%ÿýT†ª<";Password:s:0:"";Card Number:s:16:"P;†å4VZHÖj19«";Fullname:s:8:"i´êÂË";DOB:s:10:"1994-02-26";Address:s:7:"Ê>émt´";Email:s:16:"TáåôHDd£ÉêÛ¢";
+2017-09-15 10:08:02 - Zánð×*[%ÿýT†ª< - SIGN UP - Sign Up Failed! Code=0240 - Card not Registered to Database!
+2017-09-15 10:08:08 - Zánð×*[%ÿýT†ª< - SIGN UP - Init Hit Data User:s:16:"Zánð×*[%ÿýT†ª<";Password:s:0:"";Card Number:s:16:"P;†å4VZHÖj19«";Fullname:s:8:"i´êÂË";DOB:s:10:"1994-02-26";Address:s:7:"Ê>émt´";Email:s:16:"TáåôHDd£ÉêÛ¢";
+2017-09-15 10:08:08 - Zánð×*[%ÿýT†ª< - SIGN UP - Sign Up Failed! Code=0240 - Card not Registered to Database!
+2017-09-15 10:08:20 - 083878211169 - SIGN UP - Init Hit Data User:s:12:"083878211169";Password:s:64:"4CC8F4D609B717356701C57A03E737E5AC8FE885DA8C7163D3DE47E01849C635";Card Number:s:10:"0987654321";Fullname:s:5:"felix";DOB:s:10:"1992-10-25";Address:s:11:"season city";Email:s:15:"felix@gmail.com";
+2017-09-15 10:08:20 - 083878211169 - SIGN UP - Sign Up Failed! Code=0230 - User Already Exist!
+2017-09-15 10:08:25 - 083878211168 - LOGIN - Init Hit Data User:s:12:"083878211168";Password:s:64:"4CC8F4D609B717356701C57A03E737E5AC8FE885DA8C7163D3DE47E01849C635";
+2017-09-15 10:08:25 - 083878211168 - LOGIN - Login Success! Code=0110 - User and Password Match!

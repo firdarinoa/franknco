@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_guide"-->
+        <!--android:enabled="true"-->
+        <!--android:icon="@drawable/ic_bus"-->
+        <!--android:title="One"-->
+        <!--app:showAsAction="ifRoom"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_news"-->
+        <!--android:enabled="true"-->
+        <!--android:icon="@drawable/ic_calendar"-->
+        <!--android:title="Two"-->
+        <!--app:showAsAction="ifRoom" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_events"-->
+        <!--android:enabled="true"-->
+        <!--android:icon="@drawable/ic_driver2"-->
+        <!--android:title="Three"-->
+        <!--android:visible="true"-->
+        <!--app:showAsAction="ifRoom" />-->
+
+</menu>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Franknco</string>
+    <string name="product_name">Product Name</string>
+    <string name="txt_image_slider">Image Slideshow</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="time_out">Time Out</string>
+    <string name="error_occured">Error Occurred</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="tab_1">Label 1</string>
+    <string name="tab_2">Label 2</string>
+    <string name="tab_3">Label 3</string>
+    <string name="tab_4">Label 4</string>
+    <string name="tab_5">Label 5</string>
+    <string name="title_activity_nearby">Near Me</string>
+    <string name="description">View or Hide Password</string>
+
+</resources>

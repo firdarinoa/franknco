@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#E43F3F</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#870040</color>
+    <color name="colorAccent">#870040</color>
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="silver">#C0c0c0</color>
+    <color name="green">#00ff00</color>
+    <color name="abu">#bbbbbb</color>
+    <color name="rounded">#E2E2E2</color>
+    <color name="back_in_action_bar">#aaaaaa</color>
+    <color name="title_in_action_bar">#4e5f6f</color>
+
+    <color name="color_text_header">#003398</color>
+    <color name="color_text_hint_edittext">#5C6C73</color>
+    <color name="line">#bbbbbb</color>
+    <color name="border_edittext_login">#C0C0C0</color>
+    <color name="radio_button">#FE9B00</color>
+
+    <color name="listview_hover">#dddddd</color>
+
+    <color name="primary_light">#45c7ed</color>
+
+    <color name="secondary">#d32f2f</color>
+    <color name="secondary_dark">#9a0007</color>
+    <color name="secondary_light">#ff6659</color>
+
+    <color name="divider">#BDBDBD</color>
+
+    <color name="grey2">#263238</color>
+
+    <color name="dark_blue">#002f6c</color>
+    <color name="dark_blue1">#00003b</color>
+
+    <color name="blue1">#7495cb</color>
+    <color name="blue2">#2196f3</color>
+    <color name="green2">#25a59a</color>
+
+    <color name="accent2">#FFF5C1D7</color>
+    <color name="cream">#FFFAEABE</color>
+    <color name="red">#ff1a1a</color>
+    <color name="calmRed">#DA5F6A</color>
+
+    <color name="primaryOld">#FF79A8EA</color>
+
+    <array name="tab_colors">
+        <item name="tab_1">#000000</item>
+        <item name="tab_2">#00886A</item>
+        <item name="tab_3">#000000</item>
+        <item name="tab_4">#6C4A42</item>
+        <item name="tab_5">#000000</item>
+    </array>
+
+    <color name="color_tab_1">#000000</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#000000</color>
+    <color name="color_tab_4">#6C4A42</color>
+    <color name="color_tab_5">#000000</color>
+
+</resources>
